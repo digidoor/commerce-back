@@ -8,6 +8,9 @@ router.get('/', (req, res) =>
 {
 	// find all products
 	// be sure to include its associated Category and Tag data
+	Product.findAll({}) //hmm, not sure how to include more than one
+		.then( data => res.json(data) )
+		.catch( error => res.status(500).json(error) );
 });
 
 // get one product
@@ -29,7 +32,8 @@ router.post('/', (req, res) =>
 	}
 	*/
 	Product.create(req.body)
-		.then((product) => {
+		.then((product) =>
+		{
 			// if there's product tags, we need to create pairings to bulk create in the ProductTag model
 			if (req.body.tagIds.length)
 			{
