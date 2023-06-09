@@ -5,7 +5,8 @@ A demonstration of setting up an e-commerce backend using a mySQL database that 
 [license info](#license)
 
 ## Here's what it looks like:
-![screenshot](commerce-back.webm?raw=true "demo")
+![screenshot](commerce-back.jpg?raw=true "demo")
+https://drive.google.com/file/d/1rAu308uisohEfJUWnnFZ5VW7UPzbTB2A/view
 ## Installation
 To install dependencies, run the following:
 ```bash
